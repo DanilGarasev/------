@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: block;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        img {
+            display: inline-block;
+            max-width: 300px;
+            height: auto;
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        .burger {
+            display: block;
+            max-width: 100%
+        }
+
+        .burger {
+            display: none;
+        }
+
+        .pizza {
+            display: none;
+        }
+
+        .cheese {
+            display: none;
+        }
+
+        .all-cb:checked~.burger,
+        .all-cb:checked~.pizza,
+        .all-cb:checked~.cheese {
+            display: block;
+        }
+
+        .burger-cb:checked~.burger {
+            display: block;
+        }
+
+        .pizza-cb:checked~.pizza {
+            display: block;
+        }
+
+        .cheese-cb:checked~.cheese {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <label for="">All</label>
+        <input type="radio" name="filter" class="all-cb" checked />
+        <label for="">Burger</label>
+        <input type="radio" name="filter" class="burger-cb" />
+        <label for="">Pizza</label>
+        <input type="radio" name="filter" class="pizza-cb" />
+        <label for="">Cheese</label>
+        <input type="radio" name="filter" class="cheese-cb" />
+        <div class="burger">
+            <img class="w-100" src="https://www.pngall.com/wp-content/uploads/5/Tofu-Burger.png" />
+            <img class="w-100" src="https://www.pngall.com/wp-content/uploads/5/Tofu-Burger.png">
+            <img class="w-100" src="https://www.pngall.com/wp-content/uploads/5/Tofu-Burger.png">
+        </div>
+        <div class="pizza">
+            <img class="w-100" src="https://www.pngfind.com/pngs/m/185-1854597_-hd-png-download.png" />
+            <img class="w-100" src="https://www.pngfind.com/pngs/m/185-1854597_-hd-png-download.png" />
+            <img class="w-100" src="https://www.pngfind.com/pngs/m/185-1854597_-hd-png-download.png">
+        </div>
+        <div class="cheese">
+            <img class="w-100" src="https://www.pngall.com/wp-content/uploads/2016/03/Cheese-PNG.png" />
+            <img class="w-100" src="https://www.pngall.com/wp-content/uploads/2016/03/Cheese-PNG.png" />
+            <img class="w-100" src="https://www.pngall.com/wp-content/uploads/2016/03/Cheese-PNG.png" />
+        </div>
+    </div>
+</body>
+
+</html>
